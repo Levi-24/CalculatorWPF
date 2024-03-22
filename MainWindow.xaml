@@ -1,0 +1,39 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="580" Width="420" VerticalAlignment="Top" HorizontalAlignment="Right">
+    <Grid Width="440" VerticalAlignment="Top" Height="591" HorizontalAlignment="Center" Margin="0,-16,0,0">
+        <!--Nums-->
+        <Button Content="9" HorizontalAlignment="Left" Margin="260,235,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36"/>
+        <Button Content="8" HorizontalAlignment="Left" Margin="180,235,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="100,235,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36"/>
+        <Button Content="6" HorizontalAlignment="Left" Margin="260,315,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36"/>
+        <Button Content="5" HorizontalAlignment="Left" Margin="180,315,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36"/>
+        <Button Content="4" HorizontalAlignment="Left" Margin="100,315,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36"/>
+        <Button Content="3" HorizontalAlignment="Left" Margin="260,395,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36"/>
+        <Button Content="2" HorizontalAlignment="Left" Margin="180,395,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36"/>
+        <Button Content="1" HorizontalAlignment="Left" Margin="100,395,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36"/>
+        <Button Content="0" HorizontalAlignment="Left" Margin="100,475,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36"/>
+
+        <!--Operands-->
+        <Button Content="/" HorizontalAlignment="Left" Margin="340,235,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36"/>
+        <Button Content="*" HorizontalAlignment="Left" Margin="340,315,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="340,395,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="340,475,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36"/>
+        <Button Content="=" HorizontalAlignment="Left" Margin="260,475,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36"/>
+        <Button Content="," HorizontalAlignment="Left" Margin="180,475,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36"/>
+
+        <!--Scientific-->
+        <Button Content="SQRT(x)" HorizontalAlignment="Left" Margin="20,315,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36"/>
+        <Button Content="x^y" HorizontalAlignment="Left" Margin="20,395,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36"/>
+        <CheckBox Content="Scientific" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="20,235,0,0" VerticalAlignment="Top" Height="80" Width="80"/>
+
+        <!--Output-->
+        <Label Content="Numbers" HorizontalAlignment="Left" Margin="20,120,0,0" VerticalAlignment="Top" Height="80" Width="400" Background="#FFD4D4D4" BorderBrush="Black" FontWeight="Bold" FontSize="48"/>
+
+    </Grid>
+</Window>

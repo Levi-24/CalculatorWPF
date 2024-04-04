@@ -5,35 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="580" Width="420" VerticalAlignment="Top" HorizontalAlignment="Right">
+        Title="Calculator" Height="580" Width="420" VerticalAlignment="Top" HorizontalAlignment="Right">
     <Grid Width="440" VerticalAlignment="Top" Height="591" HorizontalAlignment="Center" Margin="0,-16,0,0">
         <!--Nums-->
-        <Button Content="9" HorizontalAlignment="Left" Margin="260,235,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36"/>
-        <Button Content="8" HorizontalAlignment="Left" Margin="180,235,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36"/>
-        <Button Content="7" HorizontalAlignment="Left" Margin="100,235,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36"/>
-        <Button Content="6" HorizontalAlignment="Left" Margin="260,315,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36"/>
-        <Button Content="5" HorizontalAlignment="Left" Margin="180,315,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36"/>
-        <Button Content="4" HorizontalAlignment="Left" Margin="100,315,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36"/>
-        <Button Content="3" HorizontalAlignment="Left" Margin="260,395,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36"/>
-        <Button Content="2" HorizontalAlignment="Left" Margin="180,395,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36"/>
-        <Button Content="1" HorizontalAlignment="Left" Margin="100,395,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36"/>
-        <Button Content="0" HorizontalAlignment="Left" Margin="100,475,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36"/>
+            <Button Content="9" HorizontalAlignment="Left" Margin="260,235,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
+            <Button Content="8" HorizontalAlignment="Left" Margin="180,235,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
+            <Button Content="7" HorizontalAlignment="Left" Margin="100,235,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
+            <Button Content="6" HorizontalAlignment="Left" Margin="260,315,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
+            <Button Content="5" HorizontalAlignment="Left" Margin="180,315,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
+            <Button Content="4" HorizontalAlignment="Left" Margin="100,315,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
+            <Button Content="3" HorizontalAlignment="Left" Margin="260,395,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
+            <Button Content="2" HorizontalAlignment="Left" Margin="180,395,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
+            <Button Content="1" HorizontalAlignment="Left" Margin="100,395,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
+            <Button Content="0" HorizontalAlignment="Left" Margin="180,475,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
 
-        <!--Operands-->
-        <Button Content="/" HorizontalAlignment="Left" Margin="340,235,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36"/>
-        <Button Content="*" HorizontalAlignment="Left" Margin="340,315,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36"/>
-        <Button Content="+" HorizontalAlignment="Left" Margin="340,395,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36"/>
-        <Button Content="-" HorizontalAlignment="Left" Margin="340,475,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36"/>
-        <Button Content="=" HorizontalAlignment="Left" Margin="260,475,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36"/>
-        <Button Content="," HorizontalAlignment="Left" Margin="180,475,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36"/>
+            <!--Operands-->
+            <Button Content="/" HorizontalAlignment="Left" Margin="340,235,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
+            <Button Content="*" HorizontalAlignment="Left" Margin="340,315,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
+            <Button Content="+" HorizontalAlignment="Left" Margin="340,395,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
+            <Button Content="-" HorizontalAlignment="Left" Margin="340,475,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
+            <Button Content="=" HorizontalAlignment="Left" Margin="260,475,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36" Click="Finish_Click"/>
+            <Button Content="." HorizontalAlignment="Left" Margin="100,475,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
 
-        <!--Scientific-->
-        <Button Content="SQRT(x)" HorizontalAlignment="Left" Margin="20,315,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36"/>
-        <Button Content="x^y" HorizontalAlignment="Left" Margin="20,395,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36"/>
-        <CheckBox Content="Scientific" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="20,235,0,0" VerticalAlignment="Top" Height="80" Width="80"/>
+            <!--Delete-->
+            <Button Content="C" HorizontalAlignment="Left" Margin="20,235,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36" Click="Button_Clear"/>
+            <Button Content="CA" HorizontalAlignment="Left" Margin="20,315,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36" Click="Button_ClearAll"/>
 
-        <!--Output-->
-        <Label Content="Numbers" HorizontalAlignment="Left" Margin="20,120,0,0" VerticalAlignment="Top" Height="80" Width="400" Background="#FFD4D4D4" BorderBrush="Black" FontWeight="Bold" FontSize="48"/>
+            <!--Scientific-->
+            <Button Content="√" HorizontalAlignment="Left" Margin="20,395,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
+            <Button Content="^" HorizontalAlignment="Left" Margin="20,475,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
 
+            <!--Output-->
+            <Label x:Name="lblOutput" Content="" HorizontalAlignment="Center" Margin="0,135,0,0" VerticalAlignment="Top" Height="80" Width="400" Background="#FFD4D4D4" BorderBrush="Black" BorderThickness="2" HorizontalContentAlignment="Right" FontWeight="Bold" FontSize="48"/>
+            <Label x:Name="lblEquation" Content="" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" Height="80" Width="400" Background="#FFD4D4D4" BorderBrush="Black" BorderThickness="2" HorizontalContentAlignment="Right" FontWeight="Bold" FontSize="48"/>
     </Grid>
 </Window>

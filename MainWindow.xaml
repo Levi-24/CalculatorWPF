@@ -5,38 +5,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="Calculator" Height="580" Width="420" VerticalAlignment="Top" HorizontalAlignment="Right">
-    <Grid Width="440" VerticalAlignment="Top" Height="591" HorizontalAlignment="Center" Margin="0,-16,0,0">
+        Title="Calculator" Height="660" Width="400" VerticalAlignment="Top" HorizontalAlignment="Center">
+    <Grid Width="Auto" Height="Auto">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height=".4*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
         <!--Nums-->
-            <Button Content="9" HorizontalAlignment="Left" Margin="260,235,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
-            <Button Content="8" HorizontalAlignment="Left" Margin="180,235,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
-            <Button Content="7" HorizontalAlignment="Left" Margin="100,235,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
-            <Button Content="6" HorizontalAlignment="Left" Margin="260,315,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
-            <Button Content="5" HorizontalAlignment="Left" Margin="180,315,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
-            <Button Content="4" HorizontalAlignment="Left" Margin="100,315,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
-            <Button Content="3" HorizontalAlignment="Left" Margin="260,395,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
-            <Button Content="2" HorizontalAlignment="Left" Margin="180,395,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
-            <Button Content="1" HorizontalAlignment="Left" Margin="100,395,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
-            <Button Content="0" HorizontalAlignment="Left" Margin="180,475,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
+        <Button Content="9" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="36" Click="Button_Click" Grid.Row="4" Grid.Column="2"/>
+        <Button Content="8" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="36" Click="Button_Click" Grid.Row="4" Grid.Column="1"/>
+        <Button Content="7" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="36" Click="Button_Click" Grid.Row="4"/>
+        <Button Content="6" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="36" Click="Button_Click" Grid.Row="5" Grid.Column="2"/>
+        <Button Content="5" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="36" Click="Button_Click" Grid.Row="5" Grid.Column="1"/>
+        <Button Content="4" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="36" Click="Button_Click" Grid.Row="5"/>
+        <Button Content="3" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="36" Click="Button_Click" Grid.Row="6" Grid.Column="2"/>
+        <Button Content="2" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="36" Click="Button_Click" Grid.Row="6" Grid.Column="1"/>
+        <Button Content="1" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="36" Click="Button_Click" Grid.Row="6"/>
+        <Button Content="0" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="36" Click="Button_Click" Grid.Row="7"/>
 
-            <!--Operands-->
-            <Button Content="/" HorizontalAlignment="Left" Margin="340,235,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
-            <Button Content="*" HorizontalAlignment="Left" Margin="340,315,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
-            <Button Content="+" HorizontalAlignment="Left" Margin="340,395,0,0" VerticalAlignment="Top" Height="80" Width="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
-            <Button Content="-" HorizontalAlignment="Left" Margin="340,475,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
-            <Button Content="=" HorizontalAlignment="Left" Margin="260,475,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36" Click="Finish_Click"/>
-            <Button Content="." HorizontalAlignment="Left" Margin="100,475,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
+        <!--Operands-->
+        <Button Content="/" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="36" Click="Button_Click" Grid.Row="4" Grid.Column="3"/>
+        <Button Content="*" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="36" Click="Button_Click" Grid.Row="5" Grid.Column="3"/>
+        <Button Content="+" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="36" Click="Button_Click" Grid.Row="6" Grid.Column="3"/>
+        <Button Content="-" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="36" Click="Button_Click" Grid.Row="7" Grid.Column="3"/>
+        <Button Content="=" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="36" Click="Finish_Click" Grid.Row="7" Grid.Column="2"/>
+        <Button Content="." HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="36" Click="Button_Click" Grid.Row="7" Grid.Column="1"/>
 
-            <!--Delete-->
-            <Button Content="C" HorizontalAlignment="Left" Margin="20,235,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36" Click="Button_Clear"/>
-            <Button Content="CA" HorizontalAlignment="Left" Margin="20,315,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36" Click="Button_ClearAll"/>
+        <!--Delete-->
+        <Button Content="C" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="36" Click="Button_Clear" Grid.Row="3" Grid.Column="3"/>
+        <Button Content="CA" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="36" Click="Button_ClearAll" Grid.Row="3"/>
 
-            <!--Scientific-->
-            <Button Content="√" HorizontalAlignment="Left" Margin="20,395,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
-            <Button Content="^" HorizontalAlignment="Left" Margin="20,475,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold" FontSize="36" Click="Button_Click"/>
+        <!--Scientific-->
+        <CheckBox x:Name="Chb" Content="Scientific" HorizontalAlignment="Center" Margin="5" VerticalAlignment="Center" Checked="Chb_CheckedChange" Unchecked="Chb_CheckedChange" Grid.Row="2" Grid.ColumnSpan="4" FontWeight="Bold" FontSize="18"/>
+        <Button x:Name="BtnRoot" Content="√" Visibility="Collapsed" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="36" Click="Button_Click" Grid.Row="3" Grid.Column="1"/>
+        <Button x:Name="BtnPower" Content="^" Visibility="Collapsed" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="36" Click="Button_Click" Grid.Row="3" Grid.Column="2"/>
 
-            <!--Output-->
-            <Label x:Name="lblOutput" Content="" HorizontalAlignment="Center" Margin="0,135,0,0" VerticalAlignment="Top" Height="80" Width="400" Background="#FFD4D4D4" BorderBrush="Black" BorderThickness="2" HorizontalContentAlignment="Right" FontWeight="Bold" FontSize="48"/>
-            <Label x:Name="lblEquation" Content="" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" Height="80" Width="400" Background="#FFD4D4D4" BorderBrush="Black" BorderThickness="2" HorizontalContentAlignment="Right" FontWeight="Bold" FontSize="48"/>
+        <!--Output-->
+        <Label x:Name="lblOutput" Content="" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" Background="#FFD4D4D4" BorderBrush="Black" BorderThickness="2" HorizontalContentAlignment="Right" FontWeight="Bold" FontSize="48" Grid.ColumnSpan="4"/>
+        <Label x:Name="lblEquation" Content="" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" Background="#FFD4D4D4" BorderBrush="Black" BorderThickness="2" HorizontalContentAlignment="Right" FontWeight="Bold" FontSize="48" Grid.ColumnSpan="4" Grid.Row="1"/>
     </Grid>
 </Window>

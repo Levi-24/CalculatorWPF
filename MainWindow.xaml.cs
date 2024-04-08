@@ -57,5 +57,20 @@ namespace Calculator
             lblOutput.Content = string.Empty;
             lblEquation.Content = string.Empty;
         }
+
+        private void Chb_CheckedChange(object sender, RoutedEventArgs e)
+        {
+            if(Chb.IsChecked == true)
+            {
+                BtnPower.Visibility = Visibility.Visible;
+                BtnRoot.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                BtnPower.Visibility = Visibility.Hidden;
+                BtnRoot.Visibility = Visibility.Hidden;
+            }
+
+        }
     }
 }

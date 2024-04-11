@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="Calculator" Height="660" Width="400" VerticalAlignment="Top" HorizontalAlignment="Center">
+        Title="Calculator" MinHeight="660" Height="660" MinWidth="400" Width="400" VerticalAlignment="Top" HorizontalAlignment="Center">
     <Grid Width="Auto" Height="Auto">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -49,7 +49,8 @@
         <Button Content="CA" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="36" Click="Button_ClearAll" Grid.Row="3"/>
 
         <!--Scientific-->
-        <CheckBox x:Name="Chb" Content="Scientific" HorizontalAlignment="Center" Margin="5" VerticalAlignment="Center" Checked="Chb_CheckedChange" Unchecked="Chb_CheckedChange" Grid.Row="2" Grid.ColumnSpan="4" FontWeight="Bold" FontSize="18"/>
+        <CheckBox x:Name="Chb" Content="Scientific" HorizontalAlignment="Center" Margin="5" VerticalAlignment="Center" Checked="Chb_CheckedChange" Unchecked="Chb_CheckedChange" Grid.Row="2" Grid.ColumnSpan="2" FontWeight="Bold" FontSize="18"/>
+        <Button x:Name="Abt" Content="About" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="16" Click="Button_About" Grid.Row="2" Grid.Column="4"/>
         <Button x:Name="BtnRoot" Content="√" Visibility="Collapsed" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="36" Click="Button_Click" Grid.Row="3" Grid.Column="1"/>
         <Button x:Name="BtnPower" Content="^" Visibility="Collapsed" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="36" Click="Button_Click" Grid.Row="3" Grid.Column="2"/>
 
